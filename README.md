@@ -83,5 +83,14 @@ Protocols: [`scenarios/protocols.md`](scenarios/protocols.md). Rules: [`scenario
 | Conventional local SQL DB (reference engine, not a product) | **Published** — SQLite write 5.5 ms / read 0.09 ms median | n/a |
 | Other systems | Open for submissions | Open for submissions |
 
+## Further reading
+
+- [Offline-first architecture paper (Telegraph)](https://telegra.ph/Offline-first-POS-architecture-for-Jordanian-restaurants-a-reference-11-09)
+- [Gist: local save vs cloud round trip](https://gist.github.com/rawaerp/619740a019746974248172d97765dfe5)
+- [Gist: 10 criteria + architecture classes](https://gist.github.com/rawaerp/adbb1ea4f20f9a60e4a389804442da69)
+- [Research portal](https://rawaerp.github.io/)
+- [10 criteria for choosing a restaurant POS in Jordan](https://rawaerp.com/guide/restaurant-pos-jordan-10-criteria)
+- [JoFotara guide](https://github.com/rawaerp/jordan-jofotara-pos-integration-guide)
+
 Licence: text CC BY 4.0, code MIT. Method corrections welcome via issues. More on choosing a system:
 <https://rawaerp.com/guide/choose-pos> · architecture of offline POS: <https://rawaerp.com/guide/offline-pos-why>.
