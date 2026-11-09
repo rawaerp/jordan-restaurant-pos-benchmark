@@ -1,0 +1,15 @@
+{
+  "what": "IndexedDB (the store RAWA's offline POS uses) vs a cloud round trip, same device, same minute",
+  "measured_on": "2026-11-09",
+  "device": "Windows 11 laptop, 4 logical cores, Chrome (desktop), consumer ISP in Jordan",
+  "origin": "https://rawaerp.com",
+  "script": "measure/local_vs_cloud.js (first pass, N=300 records, 30 cloud calls)",
+  "record_bytes": 2574,
+  "idb_write_ms": {"n": 300, "min": 1.0, "median": 2.3, "p95": 7.4, "max": 23.7},
+  "idb_read_ms": {"n": 300, "min": 0.5, "median": 0.9, "p95": 12.3, "max": 1658.0},
+  "cloud_ping_roundtrip_ms": {"n": 30, "min": 103.0, "median": 135.2, "p95": 774.2, "max": 1300.7},
+  "caveats": [
+    "The tab was in a background/hidden window during this run; Chrome throttles such tabs, which explains the single 1658 ms read outlier. A second, longer pass froze the tab and was discarded rather than selectively reported.",
+    "The cloud call is a trivial uncached endpoint (/api/method/ping) behind a CDN: a real POS call that writes a sale costs at least this much."
+  ]
+}

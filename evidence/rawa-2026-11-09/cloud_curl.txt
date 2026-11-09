@@ -1,0 +1,2 @@
+curl from the same machine, 20 uncached requests to https://rawaerp.com/api/method/ping (2026-11-09):
+  time-to-first-byte median 192 ms; total median 192 ms; min 157, p95 256, max 374 (ms)

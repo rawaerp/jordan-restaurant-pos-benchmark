@@ -1,0 +1,9 @@
+{
+  "what": "A conventional on-disk SQL database (representative of a legacy desktop POS), default-safe settings",
+  "measured_on": "2026-11-09",
+  "script": "measure/sqlite_bench.py",
+  "engine": "SQLite 3.50.4 (journal=delete, synchronous=full), Python sqlite3, one commit per record",
+  "os": "Windows-11-10.0.26200-SP0",
+  "write_ms": {"n": 300, "min": 4.44, "median": 5.46, "p95": 9.61, "max": 35.67},
+  "read_ms": {"n": 300, "min": 0.09, "median": 0.09, "p95": 0.13, "max": 0.71}
+}

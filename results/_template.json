@@ -1,0 +1,17 @@
+{
+  "system": "VENDOR NAME",
+  "version": "app/web version or date",
+  "plan_tested": "plan name and price in JOD/year",
+  "tested_on": "2026-00-00",
+  "tester": "name or handle",
+  "relationship": "owner | customer | vendor | independent",
+  "hardware": {"device": "model + OS version", "printer": "model", "network": "router model / ISP"},
+  "evidence": "path under evidence/ or a URL",
+  "s1_offline": {"offline_completed": null, "receipts_printed": null, "missing_after_sync": null, "duplicates_after_sync": null, "sync_minutes": null},
+  "s2_rush": {"orders_completed": null, "median_seconds": null, "p95_seconds": null, "stalls": null, "errors": null},
+  "s3_printer": {"sale_kept": null, "clear_error": null, "one_tap_retry": null, "duplicate_created": null},
+  "s4_jofotara": {"cashier_blocked": null, "extra_seconds_per_sale": null, "invoices_sent_after_recovery": null, "duplicate_invoices": null},
+  "s5_arabic": {"receipt_arabic_ok": null, "kitchen_arabic_ok": null},
+  "s6_setup": {"minutes_to_first_sale": null, "support_contacts": null},
+  "notes": ""
+}
